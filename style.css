@@ -53,6 +53,10 @@ body {
     
     /* The unfold animation */
     animation: fadeAndSlideUp 1s ease-out forwards;
+
+    /* ADD THESE TWO LINES */
+    max-height: 75vh;  /* Limits the paper's height to 75% of the screen */
+    overflow-y: auto;  /* Adds a vertical scrollbar inside the paper */
 }
 
 @keyframes fadeAndSlideUp {
