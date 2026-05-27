@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <audio id="bgMusic" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+        <div id="openScreen">
+            <button id="openBtn">💌 Open Letter</button>
+        </div>
+
+        <div id="letterContent" class="hidden">
+            <div class="paper">
+                <p>Dear [Name],</p>
+                
+                <p>This is where you can write your message. You can add as many paragraphs as you like to express whatever is on your mind.</p>
+                
+                <p>The music is playing in the background, creating the perfect atmosphere while they read.</p>
+                
+                <p>Best regards,<br>Wilson</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
