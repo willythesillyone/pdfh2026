@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // Show the letter content
         letterContent.classList.remove('hidden');
 
-        // Play the MP3 file
+        // Unmute and play the MP3 file
+        music.muted = false;
         music.play().catch(function(error) {
             console.log("Audio play failed. Browser might still be blocking it.", error);
         });
