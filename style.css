@@ -1,0 +1,67 @@
+body {
+    background-color: #e0d8c3; /* A warm, vintage background color */
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the button */
+#openScreen button {
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: #5c4033;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#openScreen button:hover {
+    background-color: #3b2820;
+    transform: scale(1.05);
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none !important;
+}
+
+/* Styling the letter to look like paper */
+.paper {
+    background-color: #fffaf0;
+    width: 90vw;
+    max-width: 600px;
+    padding: 40px 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    text-align: left;
+    line-height: 1.8;
+    color: #333;
+    
+    /* The unfold animation */
+    animation: fadeAndSlideUp 1s ease-out forwards;
+}
+
+@keyframes fadeAndSlideUp {
+    0% { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
