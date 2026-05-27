@@ -3,10 +3,11 @@ body {
     font-family: 'Georgia', serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Berubah dari center agar bagian atas surat tidak terpotong saat panjang */
+    min-height: 100vh; /* Berubah dari height: 100vh agar background bisa memanjang ke bawah */
     margin: 0;
-    overflow: hidden;
+    padding: 50px 0; /* Memberikan ruang kosong di atas dan bawah surat */
+    box-sizing: border-box;
 }
 
 .container {
@@ -53,10 +54,6 @@ body {
     
     /* The unfold animation */
     animation: fadeAndSlideUp 1s ease-out forwards;
-
-    /* ADD THESE TWO LINES */
-    max-height: 75vh;  /* Limits the paper's height to 75% of the screen */
-    overflow-y: auto;  /* Adds a vertical scrollbar inside the paper */
 }
 
 @keyframes fadeAndSlideUp {
